@@ -1,18 +1,4 @@
-/* Reset styles */
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-}
+/* #region Clear Styles */
 
 h1,
 h2,
@@ -21,27 +7,83 @@ h4,
 h5,
 h6,
 p,
-li {
-  margin: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
+}
+
+ul,
+ol {
   list-style: none;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
 button {
+  all: unset;
   cursor: pointer;
+  color: currentColor;
 }
 
-img {
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+video {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* #endregion */
+/* #region Container */
+.container {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding: 0 70px;
+  }
+}
+
+/* #endregion */
+/* #region Visually Hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #endregion */

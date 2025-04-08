@@ -8,34 +8,23 @@ screen types:
     to-desktop
     desktop,
 */
-@mixin media($_screen) {
-  @if $_screen == mobile {
-    @media screen and (min-width: $mobile) {
+@mixin media($key, $type: min) {
+  $value: map-get($breakpoints, $key);
+
+  @if $value != null {
+    @media screen and (#{$type}-width: $value) {
       @content;
     }
-  } @else if $_screen == to-tablet {
-    @media screen and (max-width: $to-tablet) {
-      @content;
-    }
-  } @else if $_screen == tablet {
-    @media screen and (min-width: $tablet) {
-      @content;
-    }
-  } @else if $_screen == to-desktop {
-    @media screen and (max-width: $to-desktop) {
-      @content;
-    }
-  } @else if $_screen == desktop {
-    @media screen and (min-width: $desktop) {
-      @content;
-    }
+  } @else {
+    @warn "Breakpoint `#{$key}` not found in $breakpoints map.";
   }
 }
 
-@mixin font($_fsz, $_lnh) {
-  font-size: #{$_fsz}px;
+@mixin font($fsz, $lnh) {
+  font-size: #{$fsz}px;
 
-  $result: math.div($_lnh, $_fsz);
+  $lh-multiplier: math.div($lnh, $fsz);
+  $rounded-lh: math.div(math.round($lh-multiplier * 100), 100);
 
-  line-height: math.div(math.round($result * 100), 100);
+  line-height: $rounded-lh;
 }

@@ -1,18 +1,15 @@
-@import './header.scss';
-@import './vite-promo.scss';
+// CSS Frameworks
+@import 'modern-normalize/modern-normalize.css';
+// layout
+@import './layout/01-header.scss';
+@import './layout/02-hero.scss';
+@import './layout/03-whispers.scss';
+@import './layout/04-garden.scss';
+@import './layout/05-moments.scss';
+@import './layout/06-plant.scss';
+@import './layout/07-footer.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import './common/breakpoints';
+@import './common/mixins';
+@import './common/reset';
+@import './common/vars';
