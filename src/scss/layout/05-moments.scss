@@ -47,9 +47,11 @@
   .section__moments {
   }
 
-  .moments__container {
+  section .moments__container {
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .moments__tree {
