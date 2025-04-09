@@ -1,0 +1,80 @@
+@import 'swiper/css';
+.plant {
+  margin: 0 auto;
+
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 320px;
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  .section {
+    margin: 0 auto;
+  }
+}
+
+.plant-title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: $golden;
+
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+.plant-description {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: $forest;
+  margin-top: 8px;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+.plant-btn {
+  display: none;
+
+  @media (min-width: 1200px) {
+    margin: 40px auto 0 auto;
+    width: 311px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0px 24px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: $orange;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #101010;
+
+    &:hover,
+    &:focus {
+      background: $light-gold;
+    }
+    &:active {
+      background: #c87100;
+    }
+  }
+}
+
+.swiper {
+  width: 320px;
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.swiper-slide {
+  box-shadow: 0 4px 25px 0 #588e09;
+  border-radius: 20px;
+}
