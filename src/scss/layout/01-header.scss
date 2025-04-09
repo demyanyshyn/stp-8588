@@ -135,17 +135,6 @@ body.menu-open {
   text-decoration: underline;
 }
 
-.section {
-  min-height: 100vh;
-  padding: 100px 1rem 1rem;
-  scroll-margin-top: 80px;
-
-  &:nth-child(even),
-  &:nth-child(odd) {
-    background: $white;
-  }
-}
-
 .progress-bar {
   height: 3px;
   position: fixed;
