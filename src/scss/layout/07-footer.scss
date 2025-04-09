@@ -1,0 +1,47 @@
+section.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: $black;
+
+  background: radial-gradient(
+    105.2% 86.23% at 50% 93.75%,
+    #76a6c4 0%,
+    #dde9f0 50.57%,
+    #f1f6f9 77.64%,
+    #fff 100%
+  );
+
+  padding-bottom: 24px;
+}
+
+.footer-logo-link {
+  margin-bottom: 8px;
+}
+.footer-logo {
+}
+.footer-play-link {
+}
+.google-play-btn {
+}
+.footer-terms-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-terms-item {
+}
+.item-link {
+}
+.copyright {
+}
+.footer-copyright-link {
+}
