@@ -1,0 +1,59 @@
+.whispers__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: $orange;
+  margin-bottom: 8px;
+}
+
+.whispers__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: $black;
+}
+
+.whispers__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .whispers__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 1019px;
+    max-height: 358px;
+  }
+  .wrapper__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    max-height: 134px;
+  }
+  .whispers__title {
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: $orange;
+  }
+
+  .whispers__text {
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $black;
+  }
+
+  .whispers__image {
+    display: flex;
+    width: 333px;
+    height: 358px;
+  }
+}

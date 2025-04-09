@@ -15,6 +15,14 @@ body.menu-open {
   width: 100%;
   padding: 1rem;
   z-index: 10;
+  background: linear-gradient(
+    175deg,
+    #76a6c4 0%,
+    #dde9f0 51%,
+    #f1f6f9 78%,
+    #ffffff 100%
+  );
+  box-shadow: 0 4px 10px rgba(45, 116, 173, 0.3);
 }
 
 .header__logo {
@@ -24,12 +32,10 @@ body.menu-open {
   height: 85px;
 }
 
-// Скрываем десктопное меню по умолчанию
 .nav__list {
   display: none;
 }
 
-// Показываем мобильное бургер-меню по умолчанию
 .burger {
   position: fixed;
   top: 54.5px;
@@ -130,7 +136,7 @@ body.menu-open {
 }
 
 .section {
-  // min-height: 100vh;
+  min-height: 100vh;
   padding: 100px 1rem 1rem;
   scroll-margin-top: 80px;
 
@@ -185,26 +191,4 @@ body.menu-open {
   .mobile-menu {
     display: none;
   }
-}
-
-.header {
-  height: 116px;
-  background: linear-gradient(
-    17deg,
-    #76a6c4 0%,
-    #dde9f0 51%,
-    #f1f6f9 78%,
-    #ffffff 100%
-  );
-}
-
-.hero__wrapper {
-  height: 40px;
-  background: linear-gradient(
-    17deg,
-    #76a6c4 0%,
-    #dde9f0 51%,
-    #f1f6f9 78%,
-    #ffffff 100%
-  );
 }

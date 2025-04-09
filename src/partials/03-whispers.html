@@ -1,1 +1,29 @@
-<section id="whispers" class="section">Whispers of the Tiles</section>
+<section id="whispers" class="section container">
+  <div class="whispers__wrapper">
+    <div class="wrapper__text">
+      <h3 class="whispers__title">Listen to the Whispers of the Tiles</h3>
+      <p class="whispers__text">
+        Each tile holds a piece of the garden's story. Match them in sets of
+        three to unlock hidden paths and calming scenes. It's like solving a
+        gentle mystery
+      </p>
+    </div>
+    <picture class="whispers__image">
+      <source
+        srcset="
+          ../img/03-whispers/desktop-tiles.png    1x,
+          ../img/03-whispers/desktop-tiles@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ../img/03-whispers/mob-tiles.png    1x,
+          ../img/03-whispers/mob-tiles@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img src="../img/03-whispers/mob-tiles.png" alt="Logo" loading="lazy" />
+    </picture>
+  </div>
+</section>
