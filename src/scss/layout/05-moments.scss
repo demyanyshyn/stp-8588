@@ -42,3 +42,51 @@
   max-width: 164px;
   max-height: 206px;
 }
+
+@media screen and (min-width: 1200px) {
+  .section__moments {
+  }
+
+  .moments__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .moments__tree {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url('../../img/05-moments/desktop-tree.png');
+    background-repeat: no-repeat;
+    height: 731px;
+    width: auto;
+    z-index: -1;
+  }
+
+  .moments__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 546px;
+    max-height: 147px;
+    text-align: start;
+    margin: auto 0;
+  }
+  .moments__title {
+    font-family: inter, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: $white;
+  }
+  .moments__description {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $white;
+  }
+  .moments__image {
+    display: flex;
+    max-width: 371px;
+    max-height: 433px;
+  }
+}
