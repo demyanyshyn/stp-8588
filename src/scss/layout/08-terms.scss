@@ -3,7 +3,7 @@
   position: relative;
   max-width: 320px;
   margin: auto;
-  background: url(../../img/08-terms/terms.png);
+  background: url(/img/08-terms/terms.png);
   background-repeat: no-repeat;
   background-position: right top 800px;
 
@@ -29,7 +29,7 @@
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
-    background: url(../../img/08-terms/terms@desktop.png);
+    background: url(/img/08-terms/terms@desktop.png);
     background-repeat: no-repeat;
     background-position: right top 300px;
 
