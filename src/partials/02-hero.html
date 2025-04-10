@@ -1,4 +1,53 @@
-<section id="home" class="section">
-  <div class="box"></div>
-  <div class="palma"></div>
+<section id="home" class="section hero">
+  <div class="container">
+    <div class="title-wrapper">
+      <h1 class="hero-title">Find Your Secret Garden</h1>
+      <h2 class="hero-subtitle">Step into a world of peace and puzzles</h2>
+    </div>
+    <div class="hero-phone">
+      <picture>
+        <source
+          media="(max-width: 320px)"
+          srcset="
+            ../img/02-hero/phone@mob1x.png 1x,
+            ../img/02-hero/phone@mob2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../img/02-hero/phone@desktop1x.png 1x,
+            ../img/02-hero/phone@desktop2x.png 2x
+          "
+        />
+
+        <img
+          class="hero-phone-img"
+          src="../img/02-hero/phone@mob1x.png"
+          srcset="
+            ../img/02-hero/phone@mob1x.png 1x,
+            ../img/02-hero/phone@mob2x.png 2x
+          "
+          alt="Zen Match"
+        />
+      </picture>
+    </div>
+    <div class="description-wrapper">
+      <p class="hero-description">
+        Discover a hidden place where matching tiles brings tranquility. Let the
+        journey begin.
+      </p>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.exoticmatch.game&hl=en&gl=us"
+        class="hero-play-link"
+        target="_blank"
+      >
+        <img
+          class="google-play-btn"
+          src="../img/07-footer/GetItOnGooglePlay_Badge_Web_color_English.png"
+          alt="Get it on Google Play"
+      /></a>
+    </div>
+  </div>
 </section>
