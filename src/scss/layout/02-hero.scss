@@ -1,7 +1,7 @@
 .hero {
   max-width: 320px;
   min-height: 800px;
-  padding: 200px 0 24px 0;
+  padding: 25px 0 24px 0;
   margin: auto;
 
   font-family: 'Inter', sans-serif;
@@ -19,7 +19,7 @@
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
-    padding: 240px 0 24px 0;
+    padding: 140px 0 24px 0;
     overflow: visible;
   }
 
@@ -30,7 +30,7 @@
     right: 0;
     top: -20px;
     background-repeat: no-repeat;
-    background-position: right -115% top 150px;
+    background-position: right -115% top -15px;
     width: 250px;
     height: 100%;
     // transform: translate(0, 180px);
@@ -41,7 +41,7 @@
       background-image: url('../../img/02-hero/palma@2x.png');
       width: 300px;
       background-position: right -55% top -15%;
-      transform: translate(20%, -20px) scale(1.3);
+      transform: translate(15%, -20px) scale(1.3);
     }
     &::after {
       background-image: url('../../img/02-hero/palma-r@descktop1x.png');
