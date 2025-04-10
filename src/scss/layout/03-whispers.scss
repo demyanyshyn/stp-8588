@@ -1,3 +1,9 @@
+.whispers__wrapper {
+  margin-top: 40px;
+  @media (min-width: 1200px) {
+    margin-top: 120px;
+  }
+}
 .whispers__title {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -5,6 +11,26 @@
   text-align: center;
   color: $orange;
   margin-bottom: 8px;
+  position: relative;
+  &::before {
+    content: 'Listen to the Whispers of the Tiles';
+    position: absolute;
+    top: 0;
+    left: auto;
+    z-index: -1;
+    text-align: center;
+    font-size: 32x;
+    color: $orange;
+    -webkit-text-stroke: 2px $golden;
+  }
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  &::before {
+    content: 'Listen to the Whispers of the Tiles';
+    font-size: 64x;
+  }
 }
 
 .whispers__text {
@@ -26,10 +52,12 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
     max-width: 1019px;
     max-height: 358px;
   }
   .wrapper__text {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     max-width: 620px;
@@ -41,6 +69,7 @@
     font-weight: 500;
     font-size: 36px;
     color: $orange;
+    margin-bottom: 24px;
   }
 
   .whispers__text {
