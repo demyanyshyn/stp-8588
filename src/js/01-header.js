@@ -15,15 +15,16 @@ gsap.registerPlugin(
   ScrollToPlugin
 );
 
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-menu');
-const closeBtn = document.querySelector('.close-btn');
+const burger = document.querySelector('.header__burger__menu');
+const mobileMenu = document.querySelector('.header__modal');
 const body = document.body;
 
 let scrollPosition = 0;
 
 const openMenu = () => {
-  burger.classList.add('active');
+  burger.classList.add('is-open');
+  mobileMenu.classList.add('is-open');
+
   scrollPosition = window.scrollY;
 
   document.documentElement.style.setProperty(
@@ -38,11 +39,13 @@ const openMenu = () => {
     x: 0,
     duration: 0.5,
     ease: 'power3.out',
+    autoAlpha: 1,
   });
 };
 
 const closeMenu = () => {
-  burger.classList.remove('active');
+  burger.classList.remove('is-open');
+  mobileMenu.classList.remove('is-open');
   body.classList.remove('menu-open');
   body.style.top = '';
   window.scrollTo(0, scrollPosition);
@@ -51,11 +54,18 @@ const closeMenu = () => {
     x: '100%',
     duration: 0.4,
     ease: 'power2.in',
+    autoAlpha: 0,
   });
 };
 
-burger.addEventListener('click', openMenu);
-closeBtn.addEventListener('click', closeMenu);
+burger.addEventListener('click', () => {
+  const isOpen = burger.classList.contains('is-open');
+  isOpen ? closeMenu() : openMenu();
+});
+
+document.querySelectorAll('.header__modal__item a').forEach(link => {
+  link.classList.add('scroll-link');
+});
 
 document.querySelectorAll('.scroll-link').forEach(link => {
   link.addEventListener('click', event => {
@@ -65,19 +75,18 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 
     if (targetElement) {
       closeMenu();
-      setTimeout(() => {
-        const headerOffset = 2;
-        const y =
-          targetElement.getBoundingClientRect().top +
-          window.pageYOffset -
-          headerOffset;
+      const headerOffset =
+        document.querySelector('.header__box').offsetHeight || 109;
+      const y =
+        targetElement.getBoundingClientRect().top +
+        window.pageYOffset -
+        headerOffset;
 
-        gsap.to(window, {
-          scrollTo: { y: y, autoKill: true },
-          duration: 1,
-          ease: 'power2.out',
-        });
-      }, 300);
+      gsap.to(window, {
+        scrollTo: { y: y, autoKill: true },
+        duration: 1,
+        ease: 'sine.inOut',
+      });
     }
   });
 });

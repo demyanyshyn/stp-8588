@@ -1,57 +1,63 @@
-<section class="header">
+<header class="header header__section">
   <div class="progress-bar"></div>
-  <div class="header__wrapper">
-    <a href="/" target="_blank">
-      <picture>
-        <source
-          srcset="../img/01-header/logo.png 1x, ../img/01-header/logo@2x.png 2x"
-          type="image/png"
-        />
-        <img
-          class="header__logo"
-          src="../img/01-header/logo.png"
-          alt="Logo"
-          loading="lazy"
-        />
-      </picture>
-    </a>
-    <button class="burger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="mobile-menu">
-      <button class="close-btn" aria-label="Close menu">&times;</button>
-      <ul>
-        <li>
-          <a href="#home" class="scroll-link">Home</a>
-        </li>
-        <li>
-          <a href="#whispers" class="scroll-link">Whispers of the Tiles</a>
-        </li>
-        <li>
-          <a href="#gardens" class="scroll-link">The Garden's Treasures</a>
-        </li>
-        <li>
-          <a href="#moments" class="scroll-link">Moments of Calm</a>
-        </li>
-        <li>
-          <a href="#plant" class="scroll-link">Plant Your Seed</a>
-        </li>
-      </ul>
+  <div class="header__box">
+    <div class="header__wrapper">
+      <a href="./index.html">
+        <picture>
+          <source
+            srcset="
+              ../img/01-header/logo.png    1x,
+              ../img/01-header/logo@2x.png 2x
+            "
+          />
+          <img
+            class="header__logo"
+            src="../img/01-header/logo.png"
+            alt="logo"
+          />
+        </picture>
+      </a>
+      <button class="header__burger header__burger-close">
+        <span class="header__burger__menu" id="burgerMenu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </span>
+      </button>
+      <div class="header__modal">
+        <ul class="header__modal__list">
+          <li class="header__modal__item"><a href="#home">Home</a></li>
+          <li class="header__modal__item">
+            <a href="#whispers">Whispers of the Tiles</a>
+          </li>
+          <li class="header__modal__item">
+            <a href="#gardens">The Garden's Treasures</a>
+          </li>
+          <li class="header__modal__item">
+            <a href="#moments">Moments of Calm</a>
+          </li>
+          <li class="header__modal__item">
+            <a href="#plant">Plant Your Seed</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="header__nav__menu" id="menu">
+        <ul class="header__nav__list">
+          <li class="header__nav__item"><a href="#home">Home</a></li>
+          <li class="header__nav__item">
+            <a href="#whispers">Whispers of the Tiles</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#gardens">The Garden's Treasures</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#moments">Moments of Calm</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#plant">Plant Your Seed</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li><a href="#home" class="scroll-link">Home</a></li>
-        <li>
-          <a href="#whispers" class="scroll-link">Whispers of the Tiles</a>
-        </li>
-        <li>
-          <a href="#gardens" class="scroll-link">The Garden's Treasures</a>
-        </li>
-        <li><a href="#moments" class="scroll-link">Moments of Calm</a></li>
-        <li><a href="#plant" class="scroll-link">Plant Your Seed</a></li>
-      </ul>
-    </nav>
   </div>
-</section>
+</header>
