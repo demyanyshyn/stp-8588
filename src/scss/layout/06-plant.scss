@@ -24,7 +24,6 @@
   font-size: 16px;
   text-align: center;
   color: $orange;
-
   &::before {
     position: absolute;
     top: 0;
@@ -48,7 +47,7 @@
   font-weight: 400;
   font-size: 12px;
   text-align: center;
-  color: $forest;
+  color: $black;
   margin-top: 8px;
   @media (min-width: 1200px) {
     font-size: 18px;

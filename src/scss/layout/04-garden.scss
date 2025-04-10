@@ -2,6 +2,7 @@
   display: flex;
   max-width: 320px;
   margin: auto;
+  padding-top: 80px;
 }
 .gardens__title {
   font-family: 'Inter', sans-serif;
@@ -78,10 +79,9 @@
     justify-items: center;
   }
   .gardens__text {
-    max-width: 558px;
+    max-width: 620px;
   }
   .gardens__title {
-    margin-top: 65px;
     text-align: start;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -139,7 +139,7 @@
       height: 100%;
       width: 250px;
       overflow: visible;
-      transform: translateY(-100px);
+      transform: translateY(10px);
     }
   }
 }

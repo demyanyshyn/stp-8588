@@ -1,5 +1,5 @@
 .whispers__wrapper {
-  margin-top: 40px;
+  padding-top: 48px;
   @media (min-width: 1200px) {
     margin-top: 120px;
   }
@@ -60,7 +60,7 @@
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    max-width: 620px;
+    max-width: 630px;
     max-height: 134px;
   }
   .whispers__title {
