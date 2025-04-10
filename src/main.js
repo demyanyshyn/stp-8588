@@ -5,3 +5,4 @@ import './js/04-garden';
 import './js/05-moments';
 import './js/06-plant';
 import './js/07-footer';
+import './js/08-cookie';
