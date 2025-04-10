@@ -15,7 +15,7 @@
     height: 100%;
     z-index: -1;
     position: absolute;
-
+    filter: blur(20px);
     background: radial-gradient(
       43.34% 76.63% at 30.67% 4.6%,
       #76a6c4 0%,
@@ -25,7 +25,7 @@
     );
     background-repeat: no-repeat;
     background-position: left top;
-    transform: rotate(-10deg) translate(65%, -15%);
+    transform: rotate(-8deg) translate(45%, -15%);
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
@@ -35,7 +35,7 @@
 
     &::before {
       width: 1200px;
-      transform: rotate(-35deg) translate(50%, -7%);
+      transform: rotate(-35deg) translate(50%, -15%);
     }
   }
 }
