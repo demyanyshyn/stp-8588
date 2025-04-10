@@ -16,18 +16,17 @@
 .cookies-popup {
   position: fixed;
   bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
-  border-radius: 20px 20px 0 0;
-  background: #8ecded;
+  left: 50%;
+  transform: translate(-50%, 100%);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(100%);
-  transition: transform 0.8s ease;
-
+  z-index: 1000;
+  background: #8ecded;
+  border-radius: 20px 20px 0 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  width: 320px;
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
     height: 350px;
   }
 }
@@ -35,8 +34,7 @@
 .cookies-popup.show-cookies-popup {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
-  transition: transform 0.8s ease;
+  transform: translate(-50%, 0);
 }
 
 .cookies-popup-wrapper {
@@ -46,7 +44,7 @@
   padding-block: 24px;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-block: 90px;
   }
@@ -111,6 +109,14 @@
     border-radius: 20px;
     width: 311px;
     height: 60px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &:hover {
+    background-color: $light-gold;
+  }
+  &:active {
+    background-color: $golden;
   }
 }
 
@@ -119,4 +125,10 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid $orange;
   margin-bottom: 40px;
+  &:hover {
+    background-color: $light-gold;
+  }
+  &:active {
+    background-color: $golden;
+  }
 }
