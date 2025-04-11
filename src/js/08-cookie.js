@@ -1,8 +1,6 @@
-import Cookies from 'js-cookie';
+const STORAGE_KEY = 'cookieConsent';
 
-const COOKIE_NAME = 'acceptCookies';
-
-if (!Cookies.get(COOKIE_NAME)) {
+if (!localStorage.getItem(STORAGE_KEY)) {
   document.addEventListener('DOMContentLoaded', () => {
     const cookiesWindow = document.querySelector('.cookies__popup');
     const overlay = document.querySelector('.cookies__overlay');
@@ -12,7 +10,7 @@ if (!Cookies.get(COOKIE_NAME)) {
     document.body.style.overflow = 'hidden';
 
     setTimeout(() => {
-      if (!Cookies.get(COOKIE_NAME)) {
+      if (!localStorage.getItem(STORAGE_KEY)) {
         cookiesWindow.classList.add('show-cookies-popup');
         overlay.classList.add('show-overlay');
       }
@@ -24,17 +22,12 @@ if (!Cookies.get(COOKIE_NAME)) {
       document.body.style.overflow = 'auto';
     };
 
-    const handleAddCookie = () => {
-      Cookies.set(COOKIE_NAME, 'true', { expires: 5 / (24 * 60) });
+    const saveConsent = accepted => {
+      localStorage.setItem(STORAGE_KEY, accepted);
       hideCookiesPopup();
     };
 
-    const handleRemoveCookie = () => {
-      Cookies.set(COOKIE_NAME, 'false', { expires: 5 / (24 * 60) });
-      hideCookiesPopup();
-    };
-
-    acceptBtn.addEventListener('click', handleAddCookie);
-    declineBtn.addEventListener('click', handleRemoveCookie);
+    acceptBtn.addEventListener('click', () => saveConsent('accepted'));
+    declineBtn.addEventListener('click', () => saveConsent('declined'));
   });
 }
