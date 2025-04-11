@@ -1,5 +1,6 @@
 @import 'swiper/css';
 .plant {
+  max-width: 320px;
   padding: 20px 0;
   margin: 0 auto;
 
@@ -8,7 +9,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 320px;
 
   @media (min-width: 1200px) {
     max-width: 1200px;
@@ -87,6 +87,8 @@
 }
 
 .swiper {
+  overflow: visible;
+
   width: 320px;
   margin-top: 32px;
   @media (min-width: 1200px) {
@@ -94,7 +96,10 @@
   }
 }
 .swiper-slide {
-  box-shadow: 0 4px 25px 0 #588e09;
+  filter: drop-shadow(0 4px 7px #588e09);
   border-radius: 20px;
   margin-top: 40px;
+  @media (min-width: 1200px) {
+    filter: drop-shadow(0 4px 25px #588e09);
+  }
 }
