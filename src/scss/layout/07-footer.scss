@@ -43,12 +43,19 @@ section.footer {
 }
 
 .google-play-btn {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
   width: 150px;
   border-radius: 3px;
   @media (min-width: 1200px) {
     width: 204px;
-    border-radius: 3px;
+    // border-radius: 3px;
+  }
+  &:hover,
+  :focus {
+    filter: brightness(1.3) drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+  }
+  &:active {
+    filter: grayscale(2) drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
   }
 }
 .footer-terms-list {
