@@ -4,10 +4,10 @@ const COOKIE_NAME = 'acceptCookies';
 
 if (!Cookies.get(COOKIE_NAME)) {
   document.addEventListener('DOMContentLoaded', () => {
-    const cookiesWindow = document.querySelector('.cookies-popup');
-    const overlay = document.querySelector('.overlayy');
-    const acceptBtn = document.querySelector('.accept');
-    const declineBtn = document.querySelector('.decline');
+    const cookiesWindow = document.querySelector('.cookies__popup');
+    const overlay = document.querySelector('.cookies__overlay');
+    const acceptBtn = document.querySelector('.cookies__button--accept');
+    const declineBtn = document.querySelector('.cookies__button--decline');
 
     document.body.style.overflow = 'hidden';
 
@@ -21,7 +21,6 @@ if (!Cookies.get(COOKIE_NAME)) {
     const hideCookiesPopup = () => {
       cookiesWindow.classList.remove('show-cookies-popup');
       overlay.classList.remove('show-overlay');
-
       document.body.style.overflow = 'auto';
     };
 
