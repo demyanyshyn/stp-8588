@@ -61,6 +61,7 @@
     rgba(0, 102, 153, 0.3) 0%,
     rgba(0, 102, 153, 0) 70%
   );
+
   filter: blur(5px);
   transform: rotate(-25deg);
   z-index: -1;
@@ -75,7 +76,7 @@
 
 @media screen and (min-width: 1200px) {
   .gardens__wrapper {
-    display: grid;
+    display: flex;
     justify-items: center;
   }
   .gardens__text {
@@ -90,6 +91,12 @@
   }
 
   .gardens__text {
+    max-width: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+
     text-align: start;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -98,10 +105,11 @@
   }
 
   .gardens__image {
+    padding-left: 60px;
     width: 333px;
     height: 358px;
     margin-top: 24px;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .gardens__image::before {
@@ -115,10 +123,10 @@
       rgba(0, 102, 153, 0) 70%
     );
     filter: blur(5px);
-    transform: rotate(-25deg);
+    transform: rotate(-5deg);
     z-index: -1;
-    top: 50px;
-    left: -230px;
+    top: 100px;
+    left: -480px;
     pointer-events: none;
   }
   .gardens__green {
@@ -134,12 +142,17 @@
     &::before {
       position: absolute;
       content: '';
-      background-image: url('/img/04-garden/palma-garden.png');
+      background-image: url('/img/02-hero/hero_vector@desktop1x.png');
       background-repeat: no-repeat;
-      height: 100%;
-      width: 250px;
-      overflow: visible;
-      transform: translateY(10px);
+      background-size: contain;
+      height: 250px;
+      width: 340px;
+      transform: translate(660px, 160px);
+      @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/img/02-hero/hero_vector@desktop2x.png');
+      }
     }
   }
 }

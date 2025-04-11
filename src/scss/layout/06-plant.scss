@@ -1,6 +1,7 @@
 @import 'swiper/css';
 .plant {
-  margin: 20px auto 0 auto;
+  padding: 20px 0;
+  margin: 0 auto;
 
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -11,10 +12,12 @@
 
   @media (min-width: 1200px) {
     max-width: 1200px;
-    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 107px;
   }
   .section {
     margin: 0 auto;
+    padding: 0 32px;
   }
 }
 
@@ -27,7 +30,7 @@
   &::before {
     position: absolute;
     top: 0;
-    left: auto;
+    left: 0;
     z-index: -1;
     text-align: center;
     font-size: 32x;

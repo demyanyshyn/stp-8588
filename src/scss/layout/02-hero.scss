@@ -5,47 +5,73 @@
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
-  &::before {
-    position: absolute;
-    content: '';
-    background-image: url('/img/02-hero/palma.png');
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 250px;
-    transform: translate(-31%, 18px);
-  }
   @media (min-width: 1200px) {
     max-width: 1200px;
     padding: 140px 0 24px 0;
     min-height: 800px;
     overflow: visible;
   }
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('/img/02-hero/hero_vector@mob1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 175px;
+    width: 230px;
+    transform: translate(40px, 233px);
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/img/02-hero/hero_vector@mob2x.png');
+    }
+  }
 
   &::after {
     position: absolute;
     content: '';
-    background-image: url('/img/02-hero/palma2.png');
+    background-image: url('/img/02-hero/hero_palma@mob1x.png');
     right: 0;
     top: -20px;
     background-repeat: no-repeat;
-    background-position: right -115% top -15px;
-    width: 250px;
-    height: 400px;
-    // transform: translate(0, 180px);
+    background-position: -50px -20px;
+    width: 85px;
+    height: 150px;
+    transform: translate(-40px, 182px);
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/img/02-hero/hero_palma@mob2x.png');
+      background-size: 170px 188px;
+    }
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
     &::before {
-      background-image: url('/img/02-hero/palma@2x.png');
-      width: 300px;
-      background-position: right -55% top -15%;
-      transform: translate(15%, -140px) scale(1.3);
+      background-image: url('/img/02-hero/hero_vector@desktop1x.png');
+      width: 400px;
+      height: 350px;
+      background-size: contain;
+      transform: translate(710px, 210px) scale(1.3);
+      @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/img/02-hero/hero_vector@desktop2x.png');
+      }
     }
     &::after {
-      background-image: url('/img/02-hero/palma-r@descktop1x.png');
-      width: 300px;
-      height: 700px;
-      background-position: right top -60px;
+      background-image: url('../../img/02-hero/hero_palma@desktop1x.png');
+      width: 220px;
+      height: 350px;
+      background-size: 420px;
+      background-position: -100px -60px;
+      transform: translate(5px, 155px);
+      z-index: 2;
+      @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/img/02-hero/hero_palma@desktop2x.png');
+      }
     }
   }
 }
@@ -53,12 +79,12 @@
   .container {
     display: flex;
     flex-direction: column;
-    gap: 430px;
+    gap: 390px;
     position: relative;
 
     @media (min-width: 1200px) {
       gap: 85px;
-      padding: 0 140px;
+      padding: 0 80px;
     }
   }
 }
@@ -66,6 +92,10 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  align-items: center;
+  @media (min-width: 1200px) {
+    align-items: start;
+  }
 }
 .hero-title {
   position: relative;
@@ -110,12 +140,12 @@
 }
 
 .hero-phone {
-  transform: rotate(11deg) translate(-50%, 110px);
+  transform: scale(0.8) rotate(11deg) translate(-50%, 110px);
   position: absolute;
   left: 50%;
   overflow: visible;
   @media (min-width: 1200px) {
-    transform: rotate(11deg) translate(100px, -80px);
+    transform: scale(0.8) rotate(11deg) translate(150px, -230px);
     z-index: 1;
   }
   img {
