@@ -1,13 +1,13 @@
 .hero {
   max-width: 320px;
-  padding: 25px 0 24px 0;
+  padding: 25px 0 px 0;
   margin: auto;
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
   @media (min-width: 1200px) {
     max-width: 1200px;
-    padding: 140px 0 24px 0;
+    padding: 140px 0 40px 0;
     min-height: 800px;
     overflow: visible;
   }
@@ -174,7 +174,7 @@
   padding-left: 15px;
   @media (min-width: 1200px) {
     font-size: 20px;
-    max-width: 555px;
+    max-width: 590px;
     padding-left: 0px;
   }
 }

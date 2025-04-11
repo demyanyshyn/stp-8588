@@ -1,7 +1,7 @@
 .whispers__wrapper {
   padding-top: 48px;
   @media (min-width: 1200px) {
-    margin-top: 120px;
+    padding-top: 0;
   }
 }
 .whispers__title {
@@ -60,7 +60,7 @@
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    max-width: 630px;
+    max-width: 550px;
     max-height: 134px;
   }
   .whispers__title {
@@ -77,7 +77,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: $black;
+    color: $forest;
   }
 
   .whispers__image {
