@@ -55,9 +55,8 @@
   margin-top: 40px;
   margin-bottom: 8px;
   gap: 12px;
-
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   color: $black;
 
   div {
@@ -95,8 +94,8 @@
 }
 
 .terms-title {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 32px;
   color: $black;
 }
 .content {
@@ -105,7 +104,7 @@
   color: $black;
 }
 .content-title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
   color: $black;
 }
@@ -118,6 +117,7 @@
 .terms-item {
 }
 .terms-link {
+  color: blue;
 }
 .accent-first-word:first-child {
   font-weight: 400;

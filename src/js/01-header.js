@@ -67,7 +67,7 @@ burger.addEventListener('click', () => {
 
 const sectionOffsets = {
   home: 1,
-  whispers: 1,
+  whispers: -1,
   gardens: 1,
   moments: 1,
   plant: 1,
