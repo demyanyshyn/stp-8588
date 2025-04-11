@@ -20,16 +20,15 @@
     />
     
     <script type="module" crossorigin src="/stp-8588/assets/vendor-cdda3024.js"></script>
-    <script type="module" crossorigin src="/stp-8588/assets/main-dffb5128.js"></script>
-    <link rel="stylesheet" href="/stp-8588/assets/main-7acf4bb3.css">
+    <script type="module" crossorigin src="/stp-8588/assets/main-b3513ea3.js"></script>
+    <link rel="stylesheet" href="/stp-8588/assets/main-2f76cfec.css">
   </head>
   <body>
     <header">
-      <header class="header header__section">
-  <div class="progress-bar"></div>
+      <header class="header">
   <div class="header__box">
     <div class="header__wrapper">
-      <a href="./index.html">
+      <a href="./index.html" class="header__logo-link">
         <picture>
           <source
             srcset="/stp-8588/assets/logo-1377b467.png 1x, /stp-8588/assets/logo@2x-9fd9df6d.png 2x"
@@ -37,44 +36,44 @@
           <img class="header__logo" src="/stp-8588/assets/logo-1377b467.png" alt="logo" />
         </picture>
       </a>
-      <button class="header__burger header__burger-close">
-        <span class="header__burger__menu" id="burgerMenu">
+      <button class="header__burger">
+        <span class="header__burger-menu" id="burgerMenu">
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
         </span>
       </button>
       <div class="header__modal">
-        <ul class="header__modal__list">
-          <li class="header__modal__item"><a href="#home">Home</a></li>
-          <li class="header__modal__item">
-            <a href="#whispers">Whispers of the Tiles</a>
+        <ul class="header__modal-list">
+          <li class="header__modal-item"><a data-target="home">Home</a></li>
+          <li class="header__modal-item">
+            <a data-target="whispers">Whispers of the Tiles</a>
           </li>
-          <li class="header__modal__item">
-            <a href="#gardens">The Garden's Treasures</a>
+          <li class="header__modal-item">
+            <a data-target="gardens">The Garden's Treasures</a>
           </li>
-          <li class="header__modal__item">
-            <a href="#moments">Moments of Calm</a>
+          <li class="header__modal-item">
+            <a data-target="moments">Moments of Calm</a>
           </li>
-          <li class="header__modal__item">
-            <a href="#plant">Plant Your Seed</a>
+          <li class="header__modal-item">
+            <a data-target="plant">Plant Your Seed</a>
           </li>
         </ul>
       </div>
-      <nav class="header__nav__menu" id="menu">
-        <ul class="header__nav__list">
-          <li class="header__nav__item"><a href="#home">Home</a></li>
-          <li class="header__nav__item">
-            <a href="#whispers">Whispers of the Tiles</a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a data-target="home">Home</a></li>
+          <li class="header__nav-item">
+            <a data-target="whispers">Whispers of the Tiles</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#gardens">The Garden's Treasures</a>
+          <li class="header__nav-item">
+            <a data-target="gardens">The Garden's Treasures</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#moments">Moments of Calm</a>
+          <li class="header__nav-item">
+            <a data-target="moments">Moments of Calm</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#plant">Plant Your Seed</a>
+          <li class="header__nav-item">
+            <a data-target="plant">Plant Your Seed</a>
           </li>
         </ul>
       </nav>
@@ -84,7 +83,7 @@
 
     </header>
     <main>
-      <section id="home" class="section hero">
+      <section data-section="home" class="section hero">
   <div class="container">
     <div class="title-wrapper">
       <h1 class="hero-title">Find Your Secret Garden</h1>
@@ -129,7 +128,7 @@
   </div>
 </section>
 
-      <section id="whispers" class="section container">
+      <section data-section="whispers" class="section container">
   <div class="whispers__wrapper">
     <div class="wrapper__text">
       <h2 class="whispers__title">Listen to the Whispers of the Tiles</h2>
@@ -153,7 +152,7 @@
   </div>
 </section>
 
-      <section id="gardens" class="gardens__section">
+      <section data-section="gardens" class="gardens__section">
   <div class="gardens__wrapper container">
     <div class="gardens__text">
       <h2 class="gardens__title">Uncover the Garden's Treasures</h2>
@@ -176,7 +175,7 @@
   </div>
 </section>
 
-      <section id="moments" class="section__moments">
+      <section data-section="moments" class="section__moments">
   <div class="moments__container moments__tree">
     <div class="moments__content">
       <h3 class="moments__title">Find Moments of Calm in Your Day</h3>
@@ -200,7 +199,7 @@
   </div>
 </section>
 
-      <section id="plant" class="plant">
+      <section data-section="plant" class="plant">
   <div class="section">
     <h2 class="plant-title">Start your journey in the secret garden</h2>
     <p class="plant-description" data="content">
