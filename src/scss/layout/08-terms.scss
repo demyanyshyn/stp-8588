@@ -1,5 +1,5 @@
 .terms {
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   max-width: 320px;
   margin: auto;
@@ -11,8 +11,8 @@
 
   &::before {
     content: '';
-    width: 320px;
-    height: 100%;
+    width: 250px;
+    height: 30%;
     z-index: -1;
     position: absolute;
     filter: blur(20px);
@@ -26,6 +26,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     transform: rotate(-8deg) translate(45%, -15%);
+    transition: none;
   }
   @media (min-width: 1200px) {
     max-width: 1200px;
