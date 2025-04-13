@@ -56,8 +56,8 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
-    // width: calc(320px * 0.9 + 50% - 160px);
+    // width: 100%;
+    width: calc(320px * 1 + 50% - 160px);
     min-height: 100vh;
     background-color: $dirty-white;
     border-radius: 12px 0 0 12px;
@@ -126,7 +126,7 @@ body {
     background-color: $green;
     color: $white;
     border-radius: 15px;
-    padding: 8px 16px;
+    padding: 10px 16px 6px;
     height: 38px;
     transition: scale 0.25s ease-in, color 0.25s ease-in;
 
