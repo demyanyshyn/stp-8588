@@ -9,51 +9,15 @@ import {
 } from 'swiper/modules';
 
 const swiperOptions = {
-  modules: [Autoplay, EffectCoverflow, Navigation, Pagination, EffectCards],
-  effect: 'coverflow',
-  // effect: 'cards',
   slidesPerView: 5,
-  centeredSlides: true,
+  spaceBetween: 16,
   loop: true,
-  loopedSlides: 5,
-  // loopAdditionalSlides: 5,
-
-  cardsEffect: {
-    perSlideOffset: 50,
-    perSlideRotate: 1,
-    rotate: 20,
-    slideShadows: true,
-  },
-  coverflowEffect: {
-    rotate: 30,
-    stretch: 20,
-    depth: 200,
-    modifier: 1,
-    slideShadows: true,
-    scale: 0.98,
-  },
-
   autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
+    delay: 2500,
+    disableOnInteraction: false,
   },
-
-  speed: 800,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  createElements: true,
-  lazyPreloadPrevNext: 3,
-  loopPreventsSliding: true,
 };
-
+////
 const swiper = new Swiper('.swiper', swiperOptions);
 
 // import Swiper from 'swiper';

@@ -22,6 +22,7 @@
     font-size: 32x;
     color: $orange;
     -webkit-text-stroke: 2px $golden;
+    transition: none;
   }
   @media (min-width: 1200px) {
     font-size: 32px;
@@ -68,7 +69,7 @@
   top: -80px;
   left: -70px;
   pointer-events: none;
-  transform: none;
+  transition: none;
 }
 
 .gardens__green {
