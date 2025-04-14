@@ -55,19 +55,28 @@
 .gardens__image::before {
   content: '';
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 85%;
+  height: 85%;
+
   background: radial-gradient(
-    ellipse at center,
-    rgba(0, 102, 153, 0.3) 0%,
-    rgba(0, 102, 153, 0) 70%
+    40% 30% at 50% 50%,
+    #76a6c4 0%,
+    #dde9f0 50.57%,
+    #f1f6f9 77.64%,
+    #ffffff 100%
   );
+
+  // background: radial-gradient(
+  //   ellipse at center,
+  //   rgba(0, 102, 153, 0.3) 0%,
+  //   rgba(0, 102, 153, 0) 70%
+  // );
 
   filter: blur(5px);
   transform: rotate(-25deg);
   z-index: -1;
-  top: -80px;
-  left: -70px;
+  // top: -80px;
+  // left: -70px;
   pointer-events: none;
   transition: none;
 }
