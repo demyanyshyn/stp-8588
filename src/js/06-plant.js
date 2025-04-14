@@ -16,6 +16,27 @@ const swiperOptions = {
     delay: 2500,
     disableOnInteraction: false,
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 16,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    },
+  },
 };
 ////
 const swiper = new Swiper('.swiper', swiperOptions);
