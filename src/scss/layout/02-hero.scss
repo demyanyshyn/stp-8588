@@ -83,6 +83,7 @@
     flex-direction: column;
     gap: 373px;
     position: relative;
+    padding-bottom: 8px;
 
     @media (min-width: 1200px) {
       gap: 85px;
@@ -123,7 +124,7 @@
     z-index: -1;
   }
   @media (min-width: 1200px) {
-    font-size: 53px;
+    font-size: 48px;
     font-weight: 700;
   }
 }
@@ -137,7 +138,7 @@
   text-align: left;
   color: #eb8500;
   @media (min-width: 1200px) {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
