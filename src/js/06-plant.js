@@ -11,6 +11,7 @@ import {
 const swiperOptions = {
   slidesPerView: 5,
   spaceBetween: 16,
+
   loop: true,
   autoplay: {
     delay: 2500,
@@ -19,9 +20,11 @@ const swiperOptions = {
 
   breakpoints: {
     320: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 16,
+      centeredSlides: true,
       loop: true,
+
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
