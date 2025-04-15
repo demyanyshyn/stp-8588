@@ -66,17 +66,10 @@
     #ffffff 100%
   );
 
-  // background: radial-gradient(
-  //   ellipse at center,
-  //   rgba(0, 102, 153, 0.3) 0%,
-  //   rgba(0, 102, 153, 0) 70%
-  // );
-
   filter: blur(5px);
   transform: rotate(-25deg);
   z-index: -1;
-  // top: -80px;
-  // left: -70px;
+
   pointer-events: none;
   transition: none;
 }
