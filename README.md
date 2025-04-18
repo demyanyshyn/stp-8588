@@ -37,7 +37,7 @@ This project is proprietary and was developed for a specific client. Please do n
 
 ---
 
-Built with 💻 by [Demianyshy](https://github.com/demyanyshyn)
+Built with 💻 by [Demianyshyn](https://github.com/demyanyshyn)
 
 ![Image](https://github.com/user-attachments/assets/15eccd85-0de8-4984-8d07-cc4fd4885bdb)
 
