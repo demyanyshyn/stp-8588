@@ -22,12 +22,12 @@ To run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Mrmantikor/stp-8588.git
+   git clone https://github.com/demyanyshyn/stp-8588.git
    ```
 2. Open `index.html` in a browser or serve the project using a local server (e.g., `live-server` or `http-server`).
 
 ## Live Demo
-Explore the live version of the project [here](https://mrmantikor.github.io/stp-8588/).
+Explore the live version of the project [here](https://demyanyshyn.github.io/stp-8588/).
 
 ## Contributing
 This is a completed commercial project, but feedback and suggestions are welcome! Feel free to open an issue or contact me directly.
@@ -37,7 +37,7 @@ This project is proprietary and was developed for a specific client. Please do n
 
 ---
 
-Built with 💻 by [Mrmantikor](https://github.com/Mrmantikor)
+Built with 💻 by [Demianyshy](https://github.com/demyanyshyn)
 
 ![Image](https://github.com/user-attachments/assets/15eccd85-0de8-4984-8d07-cc4fd4885bdb)
 
